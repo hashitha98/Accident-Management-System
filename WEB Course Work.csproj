@@ -1,0 +1,261 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9FB72684-66BD-4D56-A5BA-D77863065CD1}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WEB_Course_Work</RootNamespace>
+    <AssemblyName>WEB Course Work</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44304</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GMaps">
+      <HintPath>..\..\..\..\..\..\DOWNLOADS\gmaps\GMaps.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1200px-User_icon_2.svg.png" />
+    <Content Include="309099.jpg" />
+    <Content Include="309104.jpg" />
+    <Content Include="4K-Dark-Wallpaper-Background-HD-Image-for-Laptop-and-Desktop-24.jpg" />
+    <Content Include="6787939-empty-road-pictures.jpg" />
+    <Content Include="829319_street-lighting-hd-wallpapers_1920x1080_h.jpg" />
+    <Content Include="Adminlogin.aspx" />
+    <Content Include="Adminpanel.aspx" />
+    <Content Include="App_Data\Register.mdf" />
+    <Content Include="App_Data\Register_log.ldf">
+      <DependentUpon>Register.mdf</DependentUpon>
+    </Content>
+    <Content Include="cf2583a93a2d8fad8c084aecbda5f8751a2e2dc2.png" />
+    <Content Include="Driverincident.aspx" />
+    <Content Include="Homepage.aspx" />
+    <Content Include="Homepagecharts.aspx" />
+    <Content Include="Insurancehome.aspx" />
+    <Content Include="Insurancelogin.aspx" />
+    <Content Include="Loginpage.aspx" />
+    <Content Include="photo-1557081998-05f784dcdd41.jpg" />
+    <Content Include="Policehome.aspx" />
+    <Content Include="Policelogin.aspx" />
+    <Content Include="Policemap.aspx" />
+    <Content Include="Rdalogin.aspx" />
+    <Content Include="Registerpage.aspx" />
+    <Content Include="shutterstock_insurance_Ahmetov_Ruslan.jpg" />
+    <Content Include="Style.css" />
+    <Content Include="StyleforAdminlogin.css" />
+    <Content Include="StyleforAdminpanel.css" />
+    <Content Include="StyleforDriverincident.css" />
+    <Content Include="StyleforHomepage.css" />
+    <Content Include="Styleforhomepagecharts.css" />
+    <Content Include="StyleforInsurancehome.css" />
+    <Content Include="Styleforinsurancelogin.css" />
+    <Content Include="StyleforPolicehome.css" />
+    <Content Include="StyleforPolicelogin.css" />
+    <Content Include="StyleforPolicemap.css" />
+    <Content Include="StyleforRdalogin.css" />
+    <Content Include="StyleforRegisterpage.css" />
+    <Content Include="the_most_beautiful_road_in_the_world_2-wallpaper-1920x1080.jpg" />
+    <Content Include="Web.config" />
+    <Content Include="wp4800178.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Adminlogin.aspx.cs">
+      <DependentUpon>Adminlogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adminlogin.aspx.designer.cs">
+      <DependentUpon>Adminlogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Adminpanel.aspx.cs">
+      <DependentUpon>Adminpanel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adminpanel.aspx.designer.cs">
+      <DependentUpon>Adminpanel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Driverincident.aspx.cs">
+      <DependentUpon>Driverincident.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Driverincident.aspx.designer.cs">
+      <DependentUpon>Driverincident.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Homepage.aspx.cs">
+      <DependentUpon>Homepage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Homepage.aspx.designer.cs">
+      <DependentUpon>Homepage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Homepagecharts.aspx.cs">
+      <DependentUpon>Homepagecharts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Homepagecharts.aspx.designer.cs">
+      <DependentUpon>Homepagecharts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Insurancehome.aspx.cs">
+      <DependentUpon>Insurancehome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Insurancehome.aspx.designer.cs">
+      <DependentUpon>Insurancehome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Insurancelogin.aspx.cs">
+      <DependentUpon>Insurancelogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Insurancelogin.aspx.designer.cs">
+      <DependentUpon>Insurancelogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Loginpage.aspx.cs">
+      <DependentUpon>Loginpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Loginpage.aspx.designer.cs">
+      <DependentUpon>Loginpage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Policehome.aspx.cs">
+      <DependentUpon>Policehome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Policehome.aspx.designer.cs">
+      <DependentUpon>Policehome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Policelogin.aspx.cs">
+      <DependentUpon>Policelogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Policelogin.aspx.designer.cs">
+      <DependentUpon>Policelogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Policemap.aspx.cs">
+      <DependentUpon>Policemap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Policemap.aspx.designer.cs">
+      <DependentUpon>Policemap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rdalogin.aspx.cs">
+      <DependentUpon>Rdalogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Rdalogin.aspx.designer.cs">
+      <DependentUpon>Rdalogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registerpage.aspx.cs">
+      <DependentUpon>Registerpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registerpage.aspx.designer.cs">
+      <DependentUpon>Registerpage.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="UploadedImages\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>60105</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44304/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
