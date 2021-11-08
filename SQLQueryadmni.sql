@@ -1,0 +1,1 @@
+﻿Insert into Admin (name,password) values('admin','ad1');
